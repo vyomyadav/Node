@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <ol id = "hi">
+         
+    </ol >
+     <script>
+    readtodo();
+    async function readtodo(){
+        try{
+            const hi = document.getElementById("hi");
+            const result = fetch("http://localhost:5643/todos",{method:"GET"});
+            const todo = await result.json();
+            todo.forEach(t=>{
+                const li = document.createElement("li")
+                li.textContent = t.first_name;
+                li.id = t.id;
+                hi.appendChild(li);
+            });
+        }
+        catch(e){
+              console.log(`Error ${e}`);
+        }
+    }
+    </script>
+</body>
+</html>
