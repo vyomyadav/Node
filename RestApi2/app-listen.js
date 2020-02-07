@@ -9,7 +9,9 @@ const client = new Client({user:"postgres",
                            port:5432,
                            database:"todo"
 });
-app.get("/todos",async (req,res)=>{
+app.get("/todos/:user/:pass",async (req,res)=>{
+    console.log(typeof(req.params.user));
+    console.log(typeof(req.params.pass));
     const rows = await readtodo();
     res.send(rows);
 })
@@ -85,6 +87,7 @@ async function disconnect(){
 }
 async function readtodo(){
     try{
+
         const result = await client.query("Select id, test from todo");
         return result.rows;
     }
