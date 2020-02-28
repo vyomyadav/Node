@@ -6,10 +6,52 @@ body{
     background-position: center;
     font-family: sans-serif;
 }
+*{
+    MARGIN:0;
+    padding: 0;
+    
+}
+.logo img{
+    float: left;
+    width:150px;
+    height: auto;
+    margin-top: 10px;
+}
+.header {
+    max-width: 1500px;
+    margin:auto;
+    background: black;
+    min-height: 100%;
+}
+ul{  
+    margin-top: 30px;
+    float:right;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+ul li{
+   display:inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color:#fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.01s ease;
+}
+ul li a:hover{
+    background-color: #fff;
+    color: black;
+}
+ul li.active a{
+    background-color: #fff;
+    color: black;
+}  
 .form-box{
     width: 40%;
     height: 100%;
-    margin-top: 30px;    
+    margin-top: 160px;    
     background: rgba(0,0,0,0.5);
     color: #fff;
     top: 50%;
@@ -43,7 +85,7 @@ form{
     border: none;
     outline:none;
     height:20px;
-    background: #1701df;
+    background: #1c8adb;
     color:rgb(34, 31, 31);
     font-size: 18px;
     border-radius: 20px;
@@ -52,20 +94,12 @@ form{
     
 }
 .form-box input[type="submit"]:hover
-{   margin-left: 190px;
-    border: none;
-    outline:none;
-    height:20px;
-    background:#1c8adb;
-    color:rgb(34, 31, 31);
-    font-size: 18px;
-    border-radius: 20px;
-    padding: 10px 10px 30px 10px;
+{   
+    background:rgb(3, 230, 3);
     
 }
-
 #sub{
-    margin-left: 250px;
+    margin-left: 42.5%;
 }
 .a{
     margin-left: 30px;
