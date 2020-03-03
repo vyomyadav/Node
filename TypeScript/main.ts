@@ -1,9 +1,12 @@
-export{};
-var can = "hello world";
-console.log(can);
-function hasName(obj:any):obj is{name:string}{
-    return !!obj && 
-    typeof (obj) === "object" && "name" in obj; 
+const person
+//:{
+//     name:string,
+//     id:number
+// } 
+ = {
+    name:'HEllo',
+    id:234 
 }
-let myVariable:any = 30;
-console.log(hasName(myVariable));
+enum  Role {KKK = 4,BULLLET,KAMI,LOST,do};
+console.log(person);
+console.log(Role);

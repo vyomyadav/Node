@@ -1,10 +1,15 @@
-"use strict";
-exports.__esModule = true;
-var can = "hello world";
-console.log(can);
-function hasName(obj) {
-    return !!obj &&
-        typeof (obj) === "object" && "name" in obj;
-}
-var myVariable = 30;
-console.log(hasName(myVariable));
+var person = {
+    name: 'HEllo',
+    id: 234
+};
+var Role;
+(function (Role) {
+    Role[Role["KKK"] = 0] = "KKK";
+    Role[Role["BULLLET"] = 1] = "BULLLET";
+    Role[Role["KAMI"] = 2] = "KAMI";
+    Role[Role["LOST"] = 3] = "LOST";
+    Role[Role["do"] = 4] = "do";
+})(Role || (Role = {}));
+;
+console.log(person);
+console.log(Role);

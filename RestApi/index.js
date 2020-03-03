@@ -1,7 +1,9 @@
 const express = require("express");
 const joi = require("joi");
+var cors = require('cors')
 const app = express();
 app.use(express.json());
+app.use(cors())
 const customer = [
     {title: "SAm",id:1},
     {title: "Josh",id:2},
